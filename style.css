@@ -7,3 +7,59 @@ header {
 header.w-100 {
   width: 100%;
 }
+
+.modal-info,
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info,
+.modal-info {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.modal-info {
+  border: 3px solid blue;
+
+  background: #fff;
+}
+
+.color,
+.badge,
+.badge-modal {
+  color: blue;
+}
+
+.color-white,
+.badge.info,
+.info.badge-modal,
+.badge.modal-info,
+.modal-info.badge-modal {
+  color: white;
+}
+
+.badge,
+.badge-modal {
+  background: white;
+}
+
+.badge.info,
+.info.badge-modal,
+.badge.modal-info,
+.modal-info.badge-modal {
+  background: blue;
+}
+
+.badge-modal {
+  position: absolute;
+}
+
+.card {
+  border: 1px solid #303846;
+
+  background: #f7f7f7;
+}

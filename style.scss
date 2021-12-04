@@ -1,3 +1,8 @@
+$dark: #303846;
+$light: #f7f7f7;
+$primary: #09d3ac;
+$secondary: #2196f3;
+
 header {
   width: 50%;
 
@@ -6,4 +11,58 @@ header {
   &.w-100 {
     width: 100%;
   }
+}
+
+%flex-element-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center {
+  @extend %flex-element-center;
+}
+
+.info {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.modal-info {
+  @extend %flex-element-center;
+  @extend .info;
+  border: 3px solid blue;
+
+  background: #fff;
+}
+
+.color {
+  color: blue;
+
+  &-white {
+    color: white;
+  }
+}
+
+.badge {
+  @extend .color;
+  background: white;
+
+  &.info {
+    background: blue;
+
+    @extend .color-white;
+  }
+}
+
+.badge-modal {
+  @extend .badge;
+  position: absolute;
+}
+
+.card {
+  border: 1px solid $dark;
+
+  background: $light;
 }
